@@ -46,7 +46,7 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
     * Various bug fixes and optimizations
     * See [commit change]() or See [release history]()
 * 0.1
-    * Initial Release
+    * First UI release
 
 ## License
 
