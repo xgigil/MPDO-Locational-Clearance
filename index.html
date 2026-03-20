@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alubijid | Municipal Planning and Development Office</title>
+  <link rel="icon" type="image/png" href="assets/seal-logo.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/seal-logo.png" />
+  <link rel="apple-touch-icon" href="assets/seal-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-banner">
+    <div class="container top-banner-inner">
+      <div class="seal seal--logo" aria-hidden="true">
+        <div class="seal-ring"></div>
+        <img
+          class="seal-logo"
+          alt="Municipal Seal"
+          src="assets/seal-logo.png"
+        />
+      </div>
+
+      <div class="banner-copy">
+        <div class="banner-line banner-title">Republic of the Philippines</div>
+        <div class="banner-line banner-subtitle">Alubijid, Misamis Oriental</div>
+        <div class="banner-line banner-small">Municipal Planning and Development Office</div>
+      </div>
+
+      <div class="banner-time">
+        <div class="time-label">Philippine Standard Time</div>
+        <div class="time-value" id="clock">--:--:--</div>
+        <div class="time-date" id="date">--</div>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container main-header-inner">
+      <div class="nav-brand">MPDO Alubijid</div>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#register" data-action="open-create-account">Register</a>
+        <a class="nav-link" href="#login">Login</a>
+        <a class="nav-link" href="#about">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / LANDING -->
+    <section id="home" class="app-page is-active" data-page="home">
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div class="about-copy" id="about-hero">
+            <h2>About the Municipal Planning and Development</h2>
+            <p>
+              The Municipal Planning and Development Office (MPDO) of Alubijid oversees
+              the implementation and regulation of zoning policies and land-use planning
+              within the municipality.
+            </p>
+            <p>
+              As part of its commitment to improving public service delivery, the office
+              adopted a Web-Based Automated Location Clearance System that streamlines
+              applications and monitoring of location clearance requests in accordance
+              with the municipality's zoning ordinance and development plans.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-inner">
+              <img
+                class="about-card-image"
+                alt="MPDO Alubijid details"
+                src="assets/mpdo details.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <h2 class="section-title">SERVICES</h2>
+
+          <div class="services-grid">
+            <a class="service-card" href="#application" data-action="open-application" data-step="1">
+              <div class="service-card-body">
+                <h3>Zoning</h3>
+                <p class="service-desc">
+                  Location Clearance, Zoning Certification,
+                  Subdivision, Projects with Required Location Guidelines and Standards
+                </p>
+              </div>
+              <span class="service-card-cta" aria-hidden="true">&rsaquo;</span>
+            </a>
+
+            <a class="service-card" href="#about">
+              <div class="service-card-body">
+                <h3>About Us</h3>
+                <p class="service-desc">Learn more about the MPDO.</p>
+              </div>
+              <span class="service-card-cta" aria-hidden="true">&rsaquo;</span>
+            </a>
+
+            <button class="service-card placeholder" type="button" data-action="coming-soon" data-service="Service 3">
+              <div class="service-card-body">
+                <h3>&nbsp;</h3>
+                <p class="service-desc">Coming soon</p>
+              </div>
+              <span class="service-card-cta" aria-hidden="true">&rsaquo;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- LOGIN -->
+    <section id="login" class="app-page" data-page="login">
+      <div class="container auth-wrap">
+        <div class="auth-card">
+          <h1 class="auth-title">Welcome Back!</h1>
+          <p class="auth-subtitle">
+            To keep connected with us please login with your personal information by email and password.
+          </p>
+
+          <form id="login-form">
+            <label class="auth-label">
+              <span>Email Address</span>
+              <input type="email" name="loginEmail" placeholder="name@email.com" autocomplete="email" required />
+            </label>
+
+            <label class="auth-label">
+              <span>Password</span>
+              <input type="password" name="loginPassword" placeholder="••••••••" autocomplete="current-password" required />
+            </label>
+
+            <div class="auth-row">
+              <label class="auth-check">
+                <input type="checkbox" name="remember" />
+                <span>Remember me</span>
+              </label>
+              <a href="#forgot" class="auth-link" data-route-link>Forget Password</a>
+            </div>
+
+            <button class="btn btn-login" type="submit">Login</button>
+          </form>
+
+          <div class="auth-divider">
+            <span class="auth-divider-line" aria-hidden="true"></span>
+            <button
+              class="auth-divider-text auth-divider-link"
+              type="button"
+              data-action="open-create-account"
+            >
+              Don't have an account?
+            </button>
+            <span class="auth-divider-line" aria-hidden="true"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORGOT PASSWORD -->
+    <section id="forgot" class="app-page" data-page="forgot">
+      <div class="container auth-wrap">
+        <div class="auth-card forgot-card">
+          <h1 class="auth-title">Forgot Password?</h1>
+          <p class="auth-subtitle forgot-subtitle">
+            Please enter the email address you used to register. We will then send you a new password.
+          </p>
+
+          <form id="forgot-form">
+            <label class="auth-label">
+              <span>Email</span>
+              <input type="email" name="forgotEmail" placeholder="Email" autocomplete="email" required />
+            </label>
+
+            <div class="forgot-actions">
+              <button class="btn btn-forgot-cancel" type="button" data-route="#login">
+                Cancel
+              </button>
+              <button class="btn btn-forgot-send" type="submit">
+                Send Email
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / CONTACT -->
+    <section id="about" class="app-page" data-page="about">
+      <div class="container auth-wrap contact-wrap">
+        <div class="contact-header">
+          <h1 class="contact-title">Contact Us</h1>
+          <p class="contact-subtitle">We're here to help</p>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-icon contact-icon-phone" aria-hidden="true">☎</div>
+            <h1 class="contact-card-title">Call Us</h2>
+            <h2 class="contact-card-text">For immediate assistance, please call us.</h2>   
+            <p class="contact-card-text">+63-955-462-1802</p>
+            <div class="contact-card-bottom" aria-hidden="true"></div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon contact-icon-mail" aria-hidden="true">✉</div>
+            <h1 class="contact-card-title">Ask a Question</h2>
+            <p class="contact-card-text">Have a question? Send us an email!</p>
+            <button class="btn btn-ask-start" type="button" data-route="#ask">
+              Get Started
+            </button>
+            <div class="contact-card-bottom" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASK QUESTION -->
+    <section id="ask" class="app-page" data-page="ask">
+      <div class="container ask-wrap">
+        <div class="ask-shell">
+          <div class="ask-left">
+            <div class="ask-left-top">Contact Information</div>
+            <div class="ask-left-sub">Say something to start a live chat!</div>
+
+            <div class="ask-left-item">
+              <div class="ask-left-label">📞</div>
+              <div class="ask-left-value">+63-955-462-1820</div>
+            </div>
+            <div class="ask-left-item">
+              <div class="ask-left-label">✉</div>
+              <div class="ask-left-value">mpdoalubijid@gmail.com</div>
+            </div>
+            <div class="ask-left-item">
+              <div class="ask-left-label">📍</div>
+              <div class="ask-left-value">Sta. Cruz St., Pob. Alubijid, Misamis Oriental</div>
+            </div>
+
+            <div class="ask-left-foot">
+              <div class="ask-left-cta">Any question or remarks? Just write us a message!</div>
+            </div>
+          </div>
+
+          <div class="ask-right">
+            <form id="ask-form">
+              <div class="ask-grid">
+                <label class="auth-label">
+                  <span>First Name</span>
+                  <input type="text" name="firstName" placeholder="Jane" />
+                </label>
+                <label class="auth-label">
+                  <span>Last Name</span>
+                  <input type="text" name="lastName" placeholder="Doe" />
+                </label>
+
+                <label class="auth-label">
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="Email" />
+                </label>
+                <label class="auth-label">
+                  <span>Phone Number</span>
+                  <input type="tel" name="phone" placeholder="+63 XXX XXX XXXX" />
+                </label>
+
+                <div class="auth-label ask-subject" aria-label="Select Subject">
+                  <span>Select Subject?</span>
+                  <div class="ask-radio-row">
+                    <label class="auth-radio">
+                      <input type="radio" name="subject" value="General Inquiry" checked />
+                      <span>General Inquiry</span>
+                    </label>
+                    <label class="auth-radio">
+                      <input type="radio" name="subject" value="General Inquiry 2" />
+                      <span>General Inquiry</span>
+                    </label>
+                    <label class="auth-radio">
+                      <input type="radio" name="subject" value="General Inquiry 3" />
+                      <span>General Inquiry</span>
+                    </label>
+                    <label class="auth-radio">
+                      <input type="radio" name="subject" value="General Inquiry 4" />
+                      <span>General Inquiry</span>
+                    </label>
+                  </div>
+                </div>
+
+                <label class="auth-label ask-message">
+                  <span>Message</span>
+                  <textarea name="message" placeholder="Write your message..." rows="4"></textarea>
+                </label>
+              </div>
+
+              <button class="btn btn-send-message" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATION WIZARD -->
+    <section id="application" class="app-page" data-page="application">
+      <div class="container wizard-wrap">
+        <div class="wizard-shell">
+          <div class="wizard-left">
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="1">
+              <div class="wizard-dot" aria-hidden="true">1</div>
+              <div>
+                <div class="wizard-section-title">Applicant Information</div>
+                <div class="wizard-section-sub">This identifies who is applying.</div>
+              </div>
+            </div>
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="2">
+              <div class="wizard-dot" aria-hidden="true">2</div>
+              <div>
+                <div class="wizard-section-title">Authorized Representative (Optional)</div>
+                <div class="wizard-section-sub">Only shown if someone else processes the application.</div>
+              </div>
+            </div>
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="3">
+              <div class="wizard-dot" aria-hidden="true">3</div>
+              <div>
+                <div class="wizard-section-title">Project Information</div>
+                <div class="wizard-section-sub">What the applicant wants to build or establish.</div>
+              </div>
+            </div>
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="4">
+              <div class="wizard-dot" aria-hidden="true">4</div>
+              <div>
+                <div class="wizard-section-title">Project Location</div>
+                <div class="wizard-section-sub">Where the project will be located.</div>
+              </div>
+            </div>
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="5">
+              <div class="wizard-dot" aria-hidden="true">5</div>
+              <div>
+                <div class="wizard-section-title">Project Area &amp; Cost</div>
+                <div class="wizard-section-sub">Required for zoning evaluation.</div>
+              </div>
+            </div>
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="6">
+              <div class="wizard-dot" aria-hidden="true">6</div>
+              <div>
+                <div class="wizard-section-title">Documents Upload</div>
+                <div class="wizard-section-sub">Applicants normally attach documents.</div>
+              </div>
+            </div>
+            <div class="wizard-section wizard-step-indicator" data-step-indicator="7">
+              <div class="wizard-dot" aria-hidden="true">7</div>
+              <div>
+                <div class="wizard-section-title">Review &amp; Submit</div>
+                <div class="wizard-section-sub">Confirm details and submit.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wizard-card">
+            <div class="wizard-card-top">
+              <div>
+                <div class="wizard-card-title">Application Form</div>
+                <div class="wizard-card-step" id="wizard-step-label">1. Applicant information</div>
+              </div>
+              <button class="wizard-close" type="button" aria-label="Close" data-route="#home">
+                ×
+              </button>
+            </div>
+
+            <div class="wizard-form">
+              <div class="wizard-step-content is-active" data-step="1">
+                <div class="wiz-composite">
+                  <div class="wiz-composite-title">Step 1 — Applicant Information</div>
+
+                  <label class="wiz-label">
+                    <span>Applicant Type</span>
+                    <select name="applicantType">
+                      <option value="Individual/Personal">Individual/Personal</option>
+                      <option value="Corporation/Business">Corporation / Business</option>
+                    </select>
+                  </label>
+
+                  <div class="wiz-hide-when-corp" data-cond="individual">
+                    <div class="wiz-bullet-title">Contact Information</div>
+                    <label class="wiz-label">
+                      <span>Mobile Number (autofill if logged in but can still be replaced)</span>
+                      <input type="tel" name="mobileNumber" placeholder="+63 XXX XXX XXXX" autocomplete="tel" />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Alternate Contact (optional)</span>
+                      <input type="tel" name="alternateContact" placeholder="+63 XXX XXX XXXX" autocomplete="tel-national" />
+                    </label>
+                  </div>
+
+                  <div class="wiz-show-when-corp" data-cond="corp">
+                    <label class="wiz-label">
+                      <span>Corporation Name (only if corporation)</span>
+                      <input type="text" name="corporationName" placeholder="Corporation Name" autocomplete="organization" />
+                    </label>
+                    <div class="wiz-bullet-title">Contact Information</div>
+                    <label class="wiz-label">
+                      <span>Mobile Number</span>
+                      <input type="tel" name="mobileNumberCorp" placeholder="+63 XXX XXX XXXX" autocomplete="tel" />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Alternate Contact (optional)</span>
+                      <input type="tel" name="alternateContactCorp" placeholder="+63 XXX XXX XXXX" autocomplete="tel-national" />
+                    </label>
+                  </div>
+
+                  <div class="wiz-grid-2">
+                    <label class="wiz-label">
+                      <span>First Name</span>
+                      <input type="text" name="firstName" placeholder="First Name" autocomplete="given-name" />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Middle Name</span>
+                      <input type="text" name="middleName" placeholder="Middle Name" autocomplete="additional-name" />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Last Name</span>
+                      <input type="text" name="lastName" placeholder="Last Name" autocomplete="family-name" />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Suffix (optional)</span>
+                      <input type="text" name="suffix" placeholder="Suffix" autocomplete="honorific-suffix" />
+                    </label>
+                  </div>
+
+                  <div class="wiz-bullet-title">Address</div>
+                  <label class="wiz-label">
+                    <span>House / Street / Zone</span>
+                    <input type="text" name="addressHouseStreetZone" placeholder="House / Street / Zone" autocomplete="street-address" />
+                  </label>
+                  <label class="wiz-label">
+                    <span>Barangay</span>
+                    <select name="addressBarangay">
+                      <option>Baybay</option>
+                      <option>Benigwayan</option>
+                      <option>Calatcat</option>
+                      <option>Lagtang</option>
+                      <option>Lanao</option>
+                      <option>Loguilo</option>
+                      <option>Lourdes</option>
+                      <option>Lumbo</option>
+                      <option>Molocboloc</option>
+                      <option>Poblacion</option>
+                      <option>Sampatulog</option>
+                      <option>Sungay</option>
+                      <option>Talaba</option>
+                      <option>Taparak</option>
+                      <option>Tugasnon</option>
+                      <option>Tula</option>
+                    </select>
+                  </label>
+                  <label class="wiz-label">
+                    <span>Municipality (Default: Alubijid)</span>
+                    <select name="addressMunicipality">
+                      <option selected>Alubijid</option>
+                    </select>
+                  </label>
+                  <label class="wiz-label">
+                    <span>Province (Default: Misamis Oriental)</span>
+                    <select name="addressProvince">
+                      <option selected>Misamis Oriental</option>
+                    </select>
+                  </label>
+
+                  <div class="wiz-authorize-row">
+                    <label class="auth-check" style="justify-content:flex-start;">
+                      <input type="checkbox" name="authorizeRep" />
+                      <span>I am authorizing a representative</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-step-content" data-step="2">
+                <div class="wiz-composite" data-rep-block>
+                  <div class="wiz-composite-title">Step 2 — Authorized Representative (Optional)</div>
+                  <div class="wiz-note" data-rep-note>
+                    Only shown if someone else processes the application.
+                  </div>
+
+                  <div class="wiz-rep-fields">
+                    <div class="wiz-bullet-title">Representative Name</div>
+                    <div class="wiz-grid-2">
+                      <label class="wiz-label">
+                        <span>First Name</span>
+                        <input type="text" name="repFirstName" placeholder="First Name" />
+                      </label>
+                      <label class="wiz-label">
+                        <span>Middle Name</span>
+                        <input type="text" name="repMiddleName" placeholder="Middle Name" />
+                      </label>
+                      <label class="wiz-label">
+                        <span>Last Name</span>
+                        <input type="text" name="repLastName" placeholder="Last Name" />
+                      </label>
+                      <label class="wiz-label">
+                        <span>Suffix (optional)</span>
+                        <input type="text" name="repSuffix" placeholder="Suffix" />
+                      </label>
+                    </div>
+
+                    <div class="wiz-bullet-title">Representative Contact Number</div>
+                    <label class="wiz-label">
+                      <span>Mobile Number</span>
+                      <input type="tel" name="repMobileNumber" placeholder="+63 XXX XXX XXXX" />
+                    </label>
+
+                    <div class="wiz-bullet-title">Representative Address</div>
+                    <label class="wiz-label">
+                      <span>House / Street / Zone</span>
+                      <input type="text" name="repAddressHouseStreetZone" placeholder="House / Street / Zone" />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Barangay (Dropdown same options in address barangay)</span>
+                      <select name="repBarangay">
+                        <option>Baybay</option>
+                        <option>Benigwayan</option>
+                        <option>Calatcat</option>
+                        <option>Lagtang</option>
+                        <option>Lanao</option>
+                        <option>Loguilo</option>
+                        <option>Lourdes</option>
+                        <option>Lumbo</option>
+                        <option>Molocboloc</option>
+                        <option>Poblacion</option>
+                        <option>Sampatulog</option>
+                        <option>Sungay</option>
+                        <option>Talaba</option>
+                        <option>Taparak</option>
+                        <option>Tugasnon</option>
+                        <option>Tula</option>
+                      </select>
+                    </label>
+                    <label class="wiz-label">
+                      <span>Municipality (Default: Alubijid)</span>
+                      <select name="repMunicipality">
+                        <option selected>Alubijid</option>
+                      </select>
+                    </label>
+                    <label class="wiz-label">
+                      <span>Province (Default: Misamis Oriental)</span>
+                      <select name="repProvince">
+                        <option selected>Misamis Oriental</option>
+                      </select>
+                    </label>
+
+                    <div class="wiz-bullet-title">Upload Document</div>
+                    <label class="wiz-label">
+                      <span>Authorization Letter</span>
+                      <input type="file" name="authorizationLetter" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-step-content" data-step="3">
+                <div class="wiz-composite">
+                  <div class="wiz-composite-title">Step 3 — Project Information</div>
+                  <div class="wiz-bullet-title">Project Details</div>
+
+                  <label class="wiz-label">
+                    <span>Project Name</span>
+                    <input type="text" name="projectName" placeholder="Project Name" />
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Project Type (dropdown)</span>
+                    <select name="projectType">
+                      <option value="Residential">Residential</option>
+                      <option value="Commercial">Commercial</option>
+                      <option value="Industrial">Industrial</option>
+                      <option value="Institutional">Institutional</option>
+                      <option value="Agricultural">Agricultural</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+
+                  <label class="wiz-label wiz-conditional" data-cond="project-type-other">
+                    <span>Other (if Project Type is Other)</span>
+                    <input type="text" name="projectTypeOther" placeholder="Specify project type" />
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Project Nature (dropdown)</span>
+                    <select name="projectNature">
+                      <option value="New Development">New Development</option>
+                      <option value="Expansion">Expansion</option>
+                      <option value="Renovation">Renovation</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+
+                  <label class="wiz-label wiz-conditional" data-cond="project-nature-other">
+                    <span>Other (if Project Nature is Other)</span>
+                    <input type="text" name="projectNatureOther" placeholder="Specify project nature" />
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Project Tenure (dropdown)</span>
+                    <select name="projectTenure">
+                      <option value="Temporary">Temporary</option>
+                      <option value="Permanent">Permanent</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <div class="wizard-step-content" data-step="4">
+                <div class="wiz-composite">
+                  <div class="wiz-composite-title">Step 4 — Project Location</div>
+
+                  <div class="wiz-bullet-title">Address</div>
+                  <label class="wiz-label">
+                    <span>House / Street / Zone</span>
+                    <input type="text" name="locationHouseStreetZone" placeholder="House / Street / Zone" />
+                  </label>
+                  <label class="wiz-label">
+                    <span>Barangay (dropdown)</span>
+                    <select name="locationBarangay">
+                      <option>Baybay</option>
+                      <option>Benigwayan</option>
+                      <option>Calatcat</option>
+                      <option>Lagtang</option>
+                      <option>Lanao</option>
+                      <option>Loguilo</option>
+                      <option>Lourdes</option>
+                      <option>Lumbo</option>
+                      <option>Molocboloc</option>
+                      <option>Poblacion</option>
+                      <option>Sampatulog</option>
+                      <option>Sungay</option>
+                      <option>Talaba</option>
+                      <option>Taparak</option>
+                      <option>Tugasnon</option>
+                      <option>Tula</option>
+                    </select>
+                  </label>
+                  <label class="wiz-label">
+                    <span>Municipality (Default: Alubijid)</span>
+                    <select name="locationMunicipality">
+                      <option selected>Alubijid</option>
+                    </select>
+                  </label>
+                  <label class="wiz-label">
+                    <span>Province (Default: Misamis Oriental)</span>
+                    <select name="locationProvince">
+                      <option selected>Misamis Oriental</option>
+                    </select>
+                  </label>
+
+                  <div class="wiz-pin-row">
+                    <div class="wiz-note">Kung makaya, pin location</div>
+                    <button class="btn btn-ghost" type="button" disabled>Pin location (optional)</button>
+                  </div>
+
+                  <label class="wiz-label">
+                    <span>Upload Picture:</span>
+                    <input type="file" name="uploadPicture" accept="image/*" />
+                  </label>
+
+                  <div class="wiz-grid-2">
+                    <label class="wiz-label">
+                      <span>Lot / Survey Number</span>
+                      <input type="text" name="lotSurveyNumber" placeholder="Lot / Survey No." />
+                    </label>
+                    <label class="wiz-label">
+                      <span>Tax Declaration Number</span>
+                      <input type="text" name="taxDeclarationNumber" placeholder="Tax Declaration" />
+                    </label>
+                  </div>
+
+                  <label class="wiz-label">
+                    <span>Right Over Land</span>
+                    <select name="rightOverLand">
+                      <option value="Owner">Owner</option>
+                      <option value="Lease">Lease</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Land Status</span>
+                    <select name="landStatus">
+                      <option value="Tenanted">Tenanted</option>
+                      <option value="Not Tenanted">Not Tenanted</option>
+                    </select>
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Existing Land Use</span>
+                    <select name="existingLandUse" id="existingLandUse">
+                      <option value="Residential">Residential</option>
+                      <option value="Commercial">Commercial</option>
+                      <option value="Industrial">Industrial</option>
+                      <option value="Institutional">Institutional</option>
+                      <option value="Agricultural">Agricultural</option>
+                      <option value="Vacant / Idle">Vacant / Idle</option>
+                      <option value="Tenanted">Tenanted</option>
+                      <option value="Non Tenanted">Non Tenanted</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+
+                  <label class="wiz-label wiz-conditional" data-cond="crop-type">
+                    <span>Crop Type (if Agricultural)</span>
+                    <input type="text" name="cropType" placeholder="Crop Type" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="wizard-step-content" data-step="5">
+                <div class="wiz-composite">
+                  <div class="wiz-composite-title">Step 5 — Project Area & Cost</div>
+
+                  <div class="wiz-bullet-title">Project Area</div>
+                  <label class="wiz-label">
+                    <span>Lot Area (sq.m)</span>
+                    <input type="number" step="0.01" name="lotAreaSqm" placeholder="0.00" />
+                  </label>
+                  <label class="wiz-label">
+                    <span>Building Area (sq.m)</span>
+                    <input type="number" step="0.01" name="buildingAreaSqm" placeholder="0.00" />
+                  </label>
+                  <label class="wiz-label">
+                    <span>Improvement Area (sq.m)</span>
+                    <input type="number" step="0.01" name="improvementAreaSqm" placeholder="0.00" />
+                  </label>
+
+                  <div class="wiz-bullet-title">Project Cost</div>
+                  <label class="wiz-label">
+                    <span>Words</span>
+                    <textarea name="costWords" placeholder="Cost in words" rows="3"></textarea>
+                  </label>
+                  <label class="wiz-label">
+                    <span>Figures</span>
+                    <input type="number" step="0.01" name="costFigures" placeholder="0.00" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="wizard-step-content" data-step="6">
+                <div class="wiz-composite">
+                  <div class="wiz-composite-title">Step 6 — Documents Upload</div>
+
+                  <div class="wiz-bullet-title">Required Files</div>
+
+                  <label class="wiz-label">
+                    <span>Tax Declaration</span>
+                    <input type="file" name="taxDeclarationFile" />
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Lot Title / Proof of Ownership</span>
+                    <input type="file" name="lotTitleFile" />
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Barangay Clearance</span>
+                    <input type="file" name="barangayClearanceFile" />
+                  </label>
+
+                  <label class="wiz-label">
+                    <span>Site Development Plan</span>
+                    <input type="file" name="siteDevelopmentPlanFile" />
+                  </label>
+
+                  <label class="wiz-label wiz-conditional" data-cond="auth-letter">
+                    <span>Authorization Letter (if representative)</span>
+                    <input type="file" name="authorizationLetterFile" />
+                  </label>
+
+                  <div class="wiz-bullet-title">Upload Field: Drag and Drop / Browse Files</div>
+                  <div class="dropzone" tabindex="0" role="button" data-dropzone>
+                    <div class="dropzone-text">Drop files here or click to browse</div>
+                    <input class="dropzone-input" type="file" name="extraDropFiles" multiple hidden />
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-step-content" data-step="7">
+                <div class="wiz-composite">
+                  <div class="wiz-composite-title">Step 7 — Review &amp; Submit</div>
+
+                  <div class="wiz-summary">
+                    <div class="wiz-bullet-title">Proposed Applicant Form Structure (Digitized)</div>
+                    <div class="wiz-summary-line">Applicant Information, Project Details, Location, Areas, Cost</div>
+                    <div class="wiz-summary-placeholder">Summary preview will appear here (demo).</div>
+                  </div>
+
+                  <div class="wizard-review-check">
+                    <label>
+                      <input type="checkbox" name="certify" />
+                      <span>I certify that the information provided is correct.</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-actions">
+                <button class="btn btn-wiz-back" type="button" data-action="wizard-back">BACK</button>
+                <button class="btn btn-wiz-primary" type="button" data-action="wizard-primary">NEXT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>Copyright &copy; 2019 <span class="footer-site">www.mpdoalubijid.gov</span></div>
+      <div>All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <div
+    id="create-account-modal"
+    class="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="create-account-title"
+  >
+    <div class="modal-card register-card" role="document">
+      <div class="register-grid">
+        <div class="register-hero" aria-hidden="true">
+          <img class="register-hero-img" src="assets/boat pic.avif" alt="" />
+          <div class="register-hero-overlay">
+            <div class="register-hero-title">WELCOME BACK</div>
+            <div class="register-hero-sub">Municipality of Alubijid</div>
+          </div>
+        </div>
+
+        <div class="register-panel">
+          <h2 class="modal-title" id="create-account-title">Create an Account</h2>
+          <p class="modal-subtitle">Or continue with Google or Facebook</p>
+
+          <div
+            id="register-feedback"
+            class="register-feedback"
+            role="alert"
+            aria-live="polite"
+          ></div>
+
+          <form class="modal-form register-form" onsubmit="return false;" autocomplete="on">
+            <div class="register-form-row">
+              <label>
+                <span>Full Name</span>
+                <input type="text" name="fullName" placeholder="Jane L. Doe" autocomplete="name" />
+              </label>
+              <label>
+                <span>Phone Number</span>
+                <input type="tel" name="phone" placeholder="+63-XXX-XXX-XXXX" autocomplete="tel" />
+              </label>
+            </div>
+
+            <div class="register-form-row">
+              <label>
+                <span>Email Address</span>
+                <input type="email" name="email" placeholder="name@email.com" autocomplete="email" />
+              </label>
+              <label>
+                <span>Birthday</span>
+                <div class="date-field">
+                  <input type="date" name="birthday" />
+                  <button type="button" class="date-field-trigger" aria-label="Open calendar">
+                    <span class="date-field-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </label>
+            </div>
+
+            <div class="register-form-row">
+              <label>
+                <span>Password</span>
+                <div class="password-field">
+                  <input type="password" name="password" placeholder="••••••••" autocomplete="new-password" />
+                  <button
+                    type="button"
+                    class="password-toggle"
+                    data-toggle-password="password"
+                    aria-label="Show password"
+                    title="Show password"
+                  >
+                    👁
+                  </button>
+                </div>
+              </label>
+              <label>
+                <span>Repeat Password</span>
+                <div class="password-field">
+                  <input type="password" name="repeatPassword" placeholder="••••••••" autocomplete="new-password" />
+                  <button
+                    type="button"
+                    class="password-toggle"
+                    data-toggle-password="repeatPassword"
+                    aria-label="Show password"
+                    title="Show password"
+                  >
+                    👁
+                  </button>
+                </div>
+              </label>
+            </div>
+
+            <label class="register-terms register-agree">
+              <input type="checkbox" name="agreeTerms" required />
+              <span>
+                By signing up you agree to our
+                <span class="register-link">Terms and conditions</span> and
+                <span class="register-link">Privacy policy</span>
+              </span>
+            </label>
+
+            <div class="modal-actions register-actions">
+              <button class="btn btn-primary modal-submit register-submit" type="submit">
+                SIGN UP
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit confirmation modal -->
+  <div
+    id="submit-confirm-modal"
+    class="submit-modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="submit-confirm-title"
+  >
+    <div class="submit-modal-card">
+      <button
+        type="button"
+        class="submit-modal-close"
+        aria-label="Close"
+        data-action="close-submit-confirm"
+      >
+        ×
+      </button>
+
+      <h2 id="submit-confirm-title">Submit Application</h2>
+      <p class="submit-modal-text" id="submit-confirm-text">
+        Are you sure you want to submit this application? No changes can be made after.
+      </p>
+
+      <div class="submit-modal-actions">
+        <button class="submit-btn submit-btn--confirm" type="button" data-action="confirm-submit">
+          Confirm
+        </button>
+        <button class="submit-btn submit-btn--cancel" type="button" data-action="cancel-submit">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit success modal -->
+  <div
+    id="submit-success-modal"
+    class="submit-success-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="submit-success-title"
+  >
+    <div class="submit-success-card">
+      <div class="submit-success-icon" aria-hidden="true">
+        ✓
+      </div>
+      <div class="submit-success-body">
+        <div class="submit-success-title" id="submit-success-title">Application received!</div>
+        <div class="submit-success-text" id="submit-success-text">
+          Thank you. Your application has been successfully submitted!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
